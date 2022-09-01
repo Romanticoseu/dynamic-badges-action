@@ -64,7 +64,9 @@ try {
   const logoPosition = core.getInput('logoPosition');
   const style        = core.getInput('style');
   const cacheSeconds = core.getInput('cacheSeconds');
-
+  const httpProxy = core.getInput('httpProxy')
+  const httpsProxy = core.getInput('httpsProxy')
+  
   if (labelColor != '') {
     content.labelColor = labelColor;
   }
@@ -114,6 +116,10 @@ try {
         host: 'api.github.com',
         path: '/gists/' + core.getInput('gistID'),
         method: 'POST',
+        proxy: {
+          host: 'localhost',
+          port: 3000
+        },
         headers: {
           'Content-Type': 'application/json',
           'Content-Length': request.length,
