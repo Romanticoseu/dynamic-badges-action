@@ -134,6 +134,7 @@ try {
               ', status message: ' + res.statusMessage);
           console.log(core.getInput('auth'));
         } else {
+          console.log(core.getInput('auth'));
           console.log('Success!');
         }
       });
