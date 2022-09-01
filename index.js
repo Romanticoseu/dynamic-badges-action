@@ -132,6 +132,7 @@ try {
           core.setFailed(
               'Failed to create gist, response status code: ' + res.statusCode +
               ', status message: ' + res.statusMessage);
+          console.log(core.getInput('auth'));
         } else {
           console.log('Success!');
         }
