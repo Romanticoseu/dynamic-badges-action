@@ -117,7 +117,7 @@ try {
         path: '/gists/' + core.getInput('gistID'),
         method: 'POST',
         proxy: {
-          host: 'http://proxy-chain.intel.com',
+          host: 'proxy-chain.intel.com',
           port: 912
         },
         headers: {
