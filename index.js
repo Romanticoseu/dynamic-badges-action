@@ -1,5 +1,6 @@
 const core = require('@actions/core');
 const http = require('https');
+const globalTunnel = require('global-tunnel-ng');
 
 try {
 
@@ -107,6 +108,11 @@ try {
   // given filename.
   const request = JSON.stringify({
     files: {[core.getInput('filename')]: {content: JSON.stringify(content)}}
+  });
+
+  globalTunnel.initialize({
+    host: 'proxy-chain.intel.com',
+    port: 912,
   });
 
   // Perform the actual request. The user agent is required as defined in

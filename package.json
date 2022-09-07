@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Schneegans/dynamic-badges-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.4"
+  },
+  "devDependencies": {
+    "global-tunnel-ng": "^2.7.1"
   }
 }
