@@ -118,7 +118,7 @@ try {
         method: 'POST',
         proxy: {
           host: 'proxy-chain.intel.com',
-          port: 911
+          port: 912
         },
         headers: {
           'Content-Type': 'application/json',
