@@ -114,6 +114,9 @@ try {
   //   host: 'proxy-chain.intel.com',
   //   port: 912,
   // });
+  process.env.http_proxy = 'http://proxy-chain.intel.com:911'
+  process.env.https_proxy = 'http://proxy-chain.intel.com:912'
+  globalTunnel.initialize();
 
   // Perform the actual request. The user agent is required as defined in
   // https://developer.github.com/v3/#user-agent-required
