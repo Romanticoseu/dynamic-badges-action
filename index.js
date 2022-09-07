@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const http = require('https');
-const globalTunnel = require('global-tunnel-ng');
+// const globalTunnel = require('global-tunnel-ng');
 
 try {
 
