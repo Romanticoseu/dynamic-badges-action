@@ -65,8 +65,8 @@ try {
   const logoPosition = core.getInput('logoPosition');
   const style        = core.getInput('style');
   const cacheSeconds = core.getInput('cacheSeconds');
-  const httpProxy = core.getInput('httpProxy')
-  const httpsProxy = core.getInput('httpsProxy')
+  // const httpProxy = core.getInput('httpProxy')
+  // const httpsProxy = core.getInput('httpsProxy')
   
   if (labelColor != '') {
     content.labelColor = labelColor;
