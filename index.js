@@ -122,11 +122,7 @@ try {
         host: 'api.github.com',
         path: '/gists/' + core.getInput('gistID'),
         method: 'POST',
-       respectEnv: true,
-        proxy: {
-          host: 'proxy-chain.intel.com',
-          port: 912
-        },
+        respectEnv: true,
         headers: {
           'Content-Type': 'application/json',
           'Content-Length': request.length,
