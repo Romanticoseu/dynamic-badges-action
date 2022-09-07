@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const http = require('https');
-// const globalTunnel = require('global-tunnel-ng');
+const globalTunnel = require('global-tunnel-ng');
 
 try {
 
@@ -114,7 +114,7 @@ try {
   process.env.http_proxy = 'http://proxy-chain.intel.com:911'
   process.env.https_proxy = 'http://proxy-chain.intel.com:912'
   globalTunnel.initialize({
-    // connect: 'both',
+    connect: 'neither',
     protocol: 'http:',
     host: 'proxy-chain.intel.com',
     port: 912,
