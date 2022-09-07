@@ -110,9 +110,7 @@ try {
     files: {[core.getInput('filename')]: {content: JSON.stringify(content)}}
   });
 
-
-  process.env.http_proxy = 'http://proxy-chain.intel.com:911'
-  process.env.https_proxy = 'http://proxy-chain.intel.com:912'
+  // Set http_proxy by globalTunnel
   globalTunnel.initialize({
     connect: 'neither',
     protocol: 'http:',
