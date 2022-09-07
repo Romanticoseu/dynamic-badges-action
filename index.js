@@ -115,7 +115,7 @@ try {
   process.env.https_proxy = 'http://proxy-chain.intel.com:912'
   globalTunnel.initialize({
     connect: 'both',
-    protocol: 'https:',
+    protocol: 'http:',
     host: 'proxy-chain.intel.com',
     port: 912,
   });
